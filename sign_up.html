@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="sign_up.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="signup-container">
+          <form id="signup-form" action="login.html"> 
+          
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" required>
+            <div id="nicknameError"></div>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError"></div>
+          
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError"></div>
+          
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <div id="confirmPasswordError"></div>
+          
+            <input type="submit" value="Submit"></input>
+          </form>
+        </div> 
+        <div id="formErrors">
+          <div id="nicknameErrorMessage"></div>
+          <div id="emailErrorMessage"></div>
+          <div id="passwordErrorMessage"></div>
+          <div id="confirmPasswordErrorMessage"></div>        
+        </div>
+      </section>
+    </main>
+    <script src="sign_up.js"></script>
+  </body>
+</html>
